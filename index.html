@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MAXLOCK AIM TOGGLE V6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" href="icon_phthangrealife.png">
+  <style>
+    body { background: #000; color: #fff; font-family: sans-serif; margin: 0; padding: 0; }
+    h1 { text-align: center; font-size: 2em; color: #00ffee; text-shadow: 0 0 15px #00fff2; padding: 20px; }
+    .section {
+      max-width: 600px; margin: 20px auto;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid #00ffee;
+      border-radius: 12px;
+      padding: 15px 20px;
+      box-shadow: 0 0 10px #00ffee;
+    }
+    .title { font-size: 1.2em; color: #00ffd5; margin-bottom: 10px; }
+    .controls { display: flex; justify-content: space-between; align-items: center; }
+    .switch { position: relative; display: inline-block; width: 50px; height: 28px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; cursor: pointer; top: 0; left: 0;
+      right: 0; bottom: 0; background-color: #ccc;
+      transition: .4s; border-radius: 28px;
+    }
+    .slider:before {
+      position: absolute; content: "";
+      height: 20px; width: 20px; left: 4px; bottom: 4px;
+      background-color: white; transition: .4s; border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #00ffee; box-shadow: 0 0 8px #00ffee;
+    }
+    input:checked + .slider:before {
+      transform: translateX(22px);
+    }
+    .download {
+      background: linear-gradient(90deg, #00ffcc, #00ffaa);
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.85em;
+      opacity: 0.4;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧸 MAXLOCK AIM TOGGLE V6 + Config Download</h1>
+  <div class="section"><div class="controls"><div class="title">🚀 Auto Headshot Pro</div>
+    <label class="switch"><input type="checkbox" onchange="flash(this)"><span class="slider"></span></label>
+    </div></div>
+
+  <div class="section"><div class="controls"><div class="title">🎯 Boost AimZone</div>
+    <label class="switch"><input type="checkbox" onchange="flash(this)"><span class="slider"></span></label>
+    </div></div>
+
+  <div class="section"><div class="controls"><div class="title">⚙️ Anti Lệch Kéo</div>
+    <label class="switch"><input type="checkbox" onchange="flash(this)"><span class="slider"></span></label>
+    </div></div>
+
+  <div class="section"><div class="controls"><div class="title">📌 Drag Súng</div>
+    <label class="switch"><input type="checkbox" onchange="flash(this)"><span class="slider"></span></label>
+    </div></div>
+
+  <div class="section"><div class="controls"><div class="title">🧠 Delay Control</div>
+    <label class="switch"><input type="checkbox" onchange="flash(this)"><span class="slider"></span></label>
+    </div></div>
+
+  <div class="section"><div class="controls"><div class="title">🛡️ Đầm Tâm & Hút Tâm</div>
+    <label class="switch"><input type="checkbox" onchange="flash(this)"><span class="slider"></span></label>
+    </div></div>
+
+  <div class="footer">© 2025 PhthangRealife🧸 – MaxLock V6 Full Toggle + Icon</div>
+  <script>
+    function flash(el) {
+      if (navigator.vibrate) navigator.vibrate(100);
+      document.body.style.background = '#111';
+      setTimeout(() => document.body.style.background = '#000', 150);
+    }
+  </script>
+</body>
+</html>
